@@ -10,9 +10,8 @@ function App() {
 
 
   const AdjustVolUp = () => {
-   
-      counter ++;
-      SetCounter(counter);
+    counter ++;
+    SetCounter(counter++);
 
   }
   const AdjustVolDown = () => {
@@ -24,7 +23,7 @@ function App() {
   return(
     
     <>
-      <h1>Hii Folks❤️</h1>
+      <h1>Hii Developers❤️</h1>
       <h3>Volume : {counter}%</h3>
       <button onClick = {AdjustVolUp}>Up </button>
       <br/>
