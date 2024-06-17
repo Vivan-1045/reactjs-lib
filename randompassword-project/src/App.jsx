@@ -9,7 +9,7 @@ function App() {
   const [characterAllow , setcharacterAllowed] = useState(false)
   const [password , setpassword] = useState("");
 
-  //Generate a random password
+  //Generate a random password by using hooks
   const randompassword = useCallback(() => {
    let pass = ""
    let str = "QWERTYUIOPASDFGHJKLZXCVBNMqwertyuioplkjhgfdsazxcvbnm"
@@ -27,7 +27,7 @@ function App() {
   //Create a reference to connect with generated password using reference function
   const passwordref = useRef(null)
 
-  //To copy the password from clipboard and modify the UI
+  //To copy the password from clipboard and modify the UI usin hooks
   const CopyPassword = useCallback(() => {
     passwordref.current?.select();
     passwordref.current?.setSelectionRange(0,99);
