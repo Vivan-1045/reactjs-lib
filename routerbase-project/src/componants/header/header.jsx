@@ -10,7 +10,7 @@ export default function Header() {
                         <img
                             src="https://alexharkness.com/wp-content/uploads/2020/06/logo-2.png"
                             className="mr-3 h-12"
-                            alt="Logo"
+                            alt=""
                         />
                     </Link>
                     <div className="flex items-center lg:order-2">
